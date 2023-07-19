@@ -13,3 +13,8 @@ label {
 .upload {
     margin: 30px 0px 0px 0px;
 }
+
+.gallery {
+    margin: 50px 0px 0px 0px;
+    display: inline-block;
+}

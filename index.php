@@ -34,6 +34,29 @@
     </form>
     <?php include 'upload.php' ?>
 
+    <div class="row list-group ">
+
+        <?php include 'connect.php' ?>
+        <?php
+        $sql = "SELECT * FROM `imagegallery`";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) { ?>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="/images/<?php echo $image; ?>" alt="">
+                </div>
+            </div>
+
+        <?php
+            }
+        }
+        ?>
+
+    </div>
+
 </body>
 
 </html>

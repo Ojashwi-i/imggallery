@@ -14,11 +14,6 @@ if ($conn) {
         $sql = "INSERT INTO imagegallery (image, title) VALUES ('".$image."','".$title."')";
         $query = $conn->query($sql);
 
-        if ($query) {
-            echo "success";
-        } else {
-            die($conn->connect_error);
-        }
     }
 }
 
